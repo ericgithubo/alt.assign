@@ -1,263 +1,402 @@
-*{
-    font-family: Gilroy-Medium;
-    font-size:20px;
+* {
+  font-family: Gilroy-Medium;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    width:100%;
+body {
+  overflow-x: hidden;
 }
 
-
-#scissor{
-    color: #0065FE;
-    font-family: Gilroy-Bold;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
-    font-weight: bold;
-    
-    }
-    #logo{
-        margin-left: 350px;
-        margin-top: 200px;
-
-    }
-
-    .figures{
-        font-weight: bold;
-    }
-
-    .head{
-        font-weight: bold;
-    }
-
-    #price {
-        font-weight: bolder;
-    }
-    
-    .professionaltitle{
-        font-family: Gilroy-Medium;
-        font-size: 24px;
-        line-height: 32px;
-        letter-spacing: 0em;
-        text-align: center;
-        
-        }
-
-
-    .revolution-text{
-        font-family: Gilroy-Bold;
-        font-size: 40px;
-        line-height: 48px;
-        letter-spacing: 0em;
-        text-align: center;
-    }.add-background {
-
-        background-image:url('/assets/images/background.png');
-        background-size: cover;
-        color:white;
-    }
-
-
-    #charge{
-        font-family: Gilroy-Bold;
-        font-size: 40px;
-        line-height: 48px;
-        letter-spacing: 0em;
-    }
-    
-    .btn {
-        border-radius:20px;
-    }
-    .toggle-faqs{
-        border-bottom:1px solid rgba(214, 214, 214, 1);
-        padding:10px;
-    }
-    .toggle-faqs .col-md-1{
-        font-size:20px;
-    }
-    #faqs{
-        font-weight:bolder;
-        border-left:25px solid black;
-    }
-    .card {
-        border-radius:12px;
-        height:355px;
-    }
-    .form-control{
-        border-radius:10px;
-    }
-    .pricing-btn{
-        border:1px solid blue;
-        color:blue;
-    }
-    .professional{
-        background-color: rgba(30, 52, 72, 1);
-        border-radius:12px;
-        height:630px;
-        color:white;
-
-    }
-    
-
-
-
-
-
-
-
-
-
-.choose{
-    background: #F9FBFD;
-
-
-
-    width: Hug (1,446px);
-    height: Hug (220px);
-    left: -3px;
-    padding: 60px 140px 60px 140px;
-    gap: 120px;
-     
-
-;
+/*-------------form section styles------------------*/
+.terms-wrapper {
+  box-sizing: border-box;
 }
 
-.choose2{
-    width: Hug (1,202.1px);
-    height: Hug (504px);
-    top: 348px;
-    left: 120px;
-    gap: 96px;
-    padding-top: 10px;
+@media (max-width: 575.98px) {
+  .terms-wrapper {
+    padding-left: 15px;
+
+    padding-right: 15px;
+
+    text-align: center;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
+  }
+
+  .terms-wrapper p {
+    font-size: 0.75rem;
+
+    line-height: 1.4;
+  }
 }
 
-.omara{
-    width: Hug (1,202.1px);
-    height: Hug (504px);
-    top: 348px;
-    left: 120px;
-    gap: 96px;
-    
-
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .terms-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
 }
 
-.side-price-border{
-    border:1px solid blue;
-    margin-top:0px;
-    margin-bottom:30px;
-    border-radius:10px 10px 10px 10px;
-    margin:-19px;
-    height:auto;
+@media (max-width: 767.98px) {
+  .card {
+    max-width: 95%;
+    padding-bottom: 450px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
+/*-----------------------------header section-------------------*/
+#scissor {
+  color: #0065fe;
+  font-family: Gilroy-Bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: bold;
+}
+#logo {
+  margin-left: 350px;
+  margin-top: 200px;
+}
 
+.figures {
+  font-weight: bold;
+}
 
-.perfect{
-    width: Hug (576.1px);
-    height: Hug (108px);
-    top: 42px;
-    left: 432px;
-    gap: 16px;}
-    
-    
-    #basic{
-        font-family: Gilroy-Medium;
-font-size: 24px;
-line-height: 32px;
-letter-spacing: 0em;
-text-align: center;
-    }
+.head {
+  font-weight: bold;
+}
 
-    #bold{
-        
-font-family: Gilroy-Bold;
-font-size: 40px;
-line-height: 48px;
-letter-spacing: 0em;
-text-align: center;
-font-weight: bold;
+#price {
+  font-weight: bolder;
+}
 
-    }
-    #free{
-        font-family: Gilroy-Medium;
-        font-size: 20px;
-        line-height: 32px;
-        letter-spacing: 0em;
-        text-align: center;
+/*-----------------------------relotinised text-------------------*/
+.professionaltitle {
+  font-family: Gilroy-Medium;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
 
-    }
-    
-    #terms{
-      font-size: 15px;
+.revolution-text {
+  font-family: Gilroy-Bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.add-background {
+  background-image: url("/assets/images/background.png");
+  background-size: cover;
+  color: white;
+}
 
+#charge {
+  font-family: Gilroy-Bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
 
-    }
-    
+.btn {
+  border-radius: 20px;
+}
 
+/*------------------------------faqs section-------------------*/
+.toggle-faqs {
+  border-bottom: 1px solid rgba(214, 214, 214, 1);
+  padding: 10px;
+}
+.toggle-faqs .col-md-1 {
+  font-size: 20px;
+}
+#faqs {
+  font-weight: bolder;
+  border-left: 25px solid black;
+}
+.card {
+  border-radius: 12px;
+  height: 355px;
+}
+.form-control {
+  border-radius: 10px;
+}
+.pricing-btn {
+  border: 1px solid blue;
+  color: blue;
+}
+.professional {
+  background-color: rgba(30, 52, 72, 1);
+  border-radius: 12px;
+  height: 630px;
+  color: white;
+}
 
-    .icon-border{
-        background-color:rgb(195, 195, 241);
-        border-radius:100%;
-        width:50px;
-        height:50px;
-    }
+.choose {
+  background: #f9fbfd;
 
-    #foot{
-        display: flex;
-        margin-left: 80px;
-        font-size: 80px; 
-        gap: 10px;
-    }
+  width: Hug (1, 446px);
+  height: Hug (220px);
+  left: -3px;
+  padding: 60px 140px 60px 140px;
+  gap: 120px;
+}
 
-    #text{
-        font-size: 24px;
-    }
+.choose2 {
+  width: Hug (1, 202.1px);
+  height: Hug (504px);
+  top: 348px;
+  left: 120px;
+  gap: 96px;
+  padding-top: 10px;
+}
 
-    
+.omara {
+  width: Hug (1, 202.1px);
+  height: Hug (504px);
+  top: 348px;
+  left: 120px;
+  gap: 96px;
+}
 
-    .socials{
-        display: flex;
-        gap: 15px;
-        font-size: 25px;
-        margin-left: 70px;
+.side-price-border {
+  border: 1px solid blue;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  border-radius: 10px 10px 10px 10px;
+  margin: -19px;
+  height: auto;
+}
 
-    }
-    .foot-head{
-        font-weight: bold;
-    }
-    .float-right{
-        margin-right: 200px;
-        width: Hug (296px);
-        height: Hug (20px);
-        top: 502px;
-        left: 1017px;
-        padding: 0px 12px 0px 12px;
-        gap: 8px;
+.perfect {
+  width: Hug (576.1px);
+  height: Hug (108px);
+  top: 42px;
+  left: 432px;
+  gap: 16px;
+}
 
-    }
+#basic {
+  font-family: Gilroy-Medium;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
 
-    
+#bold {
+  font-family: Gilroy-Bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-weight: bold;
+}
+#free {
+  font-family: Gilroy-Medium;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
 
+#terms {
+  font-size: 15px;
+}
 
+.icon-border {
+  background-color: rgb(195, 195, 241);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
 
+#foot {
+  display: flex;
+  margin-left: 80px;
+  font-size: 80px;
+  gap: 10px;
+}
 
+#text {
+  font-size: 24px;
+}
 
+.socials {
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+  margin-left: 70px;
+}
+.foot-head {
+  font-weight: bold;
+}
+.float-right {
+  margin-right: 200px;
+  width: Hug (296px);
+  height: Hug (20px);
+  top: 502px;
+  left: 1017px;
+  padding: 0px 12px 0px 12px;
+  gap: 8px;
+}
 
+/* revolutionix*/
+.button {
+  border-radius: 10px;
+  padding: 8px 25px;
+  font-size: 22px;
+  font-weight: bold;
+}
 
+/*  Hover Effects for form  */
+.input-hover:focus,
+.input-hover:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  transition: all 0.3s ease;
+}
 
+.trim-btn-hover {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+.trim-btn-hover:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
 
+/* perfect price */
+.pricing-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 
+.pricing-col {
+  flex: 1 1 100%;
 
+  max-width: 350px;
 
+  box-sizing: border-box;
+}
 
+.side-price-border,
+.professional > div {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
 
+.button-container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
+.button-container .btn {
+  min-width: 200px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
 
+.pricing-col > div {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
 
+@media (min-width: 768px) {
+  .pricing-col {
+    flex: 1 1 30%;
+  }
+}
 
+/*landing page vector graphics and images*/
 
+.photo-wrapper {
+  max-width: 500px;
 
+  width: 100%;
+  position: relative;
+}
+
+.ellipse-wrapper {
+  bottom: 10%;
+  right: 10%;
+  width: 70%;
+}
+
+@media (max-width: 576px) {
+  .ellipse-wrapper {
+    bottom: 5%;
+    right: 5%;
+    width: 80%;
+  }
+}
+
+.main-image,
+.ellipse-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadein {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slideup {
+  animation: slideUp 1s ease-out forwards;
+}
+
+.hover-fade {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-fade:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+.gap-3 > * {
+  margin-right: 12px;
+}

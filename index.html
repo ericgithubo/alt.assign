@@ -4,17 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>internship Project</title>
+    <!-- Font Awesome CDN - put this in your <head> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+.choose-section {
+  background-color: #f9f9f9;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+
+    </style>
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+
 
 
 <body>
-    <header>
 
-        <div class="row mt-2">
+    <!--Header Section-->
+    <header>
+<div class="row mt-2">
             <div class="col-md-4 col-lg-4 col-sm-4">
                 <div class="logo">
                 <a  id="logo"></a><img src="/Vector.svg" alt=""> <span id="scissor">| SCISSOR</span>
@@ -31,151 +55,186 @@
             </div>
             <div class="col-md-4 col-lg-4 col-sm-4">
                 <div class="ml-4">
-                    <a href="">Log in</a>
-                    <button class="btn btn-primary ml-2">Try for free</button>
+                    <a href="">Login</a>
+                    <button class=" button btn btn-primary ml-2">Try for free</button>
                 </div>
-                
+                </div>
             </div>
-
-       </div>
     </header>
 
-    <section>
-        <div class="text-center mt-5">
-            <p style="font-size:48px;"  class="section-title font-weight-bold">Optimize Your Online Experience with Our <br>
-                <div class="row" >
-                    <div class="d-flex mx-auto">
-                        <span style="font-size:48px;margin-right:15px;font-weight: bold;"> Advanced</span>
-                        <span>
-                            <div class="d-block">
-                                <div class="text-primary" style="font-size:48px; font-weight: bold;">
-                                    URL Shortening
-                                </div>
-                                <div class="">
-                                    <img  class="vector3" src="/Vector 3.svg" alt="">
-                                </div>
-                            </div>
-                        </span>
-                        <span style="font-size:48px;margin-left:15px;font-weight: bold;">
-                            Solution
-                        </span>
+
+    
+<!--Landing page section-->
+
+    <section class="py-5">
+        <div class="container text-center">
+            <!-- Main Heading -->
+            <h2 class="font-weight-bold section-title" style="font-size: 2.5rem; font-weight: bold;">
+                Optimize Your Online Experience with Our
+            </h2>
+    
+            <!-- Advanced URL Shortening Solution Line -->
+            <div class="row justify-content-center align-items-center mt-3 flex-wrap">
+                <div class="d-flex flex-wrap justify-content-center align-items-center">
+                    <span class="font-weight-bold mr-2" style="font-size: 2.5rem;">Advanced</span>
+    
+                    <div class="text-center mx-2">
+                        <div class="text-primary font-weight-bold" style="font-size: 2.5rem;">
+                            URL Shortening
+                        </div>
+                        <div>
+                            <img src="/Vector 3.svg" alt="underline" class="img-fluid vector3" style="max-width: 100%;">
+                        </div>
                     </div>
+    
+                    <span class="font-weight-bold ml-2" style="font-size: 2.5rem;">Solution</span>
                 </div>
-    
-                </p>
-             
-            <article class="description">
-                <p>Personalize your shortened URLs to align with your brand identity.
-                    Utilize custom slugs <br>, branded links, and domain customization options to reinforce your
-                    brand presence and <br>enhance user engagement. </p>
-            </article>
-    
-            <div>
-                <a href="" class="btn btn-primary">Sign Up</a>
-                <a href="" class="ml-3">Learn more</a>
             </div>
     
-            <div>
+            <!-- Description -->
+            <article class="description mt-4">
+                <p style="font-size: 22px;" class="px-2 px-md-5">
+                    Personalize your shortened URLs to align with your brand identity. <br class="d-none d-md-block">
+                    Utilize custom slugs, branded links, and domain customization options <br class="d-none d-md-block">
+                    to reinforce your brand presence and enhance user engagement.
+                </p>
+            </article>
     
+            <!-- Buttons -->
+            <div class="mt-4">
+                <a href="#" class=" button btn btn-primary btn-lg">Sign Up</a>
+                <a href="#" class="btn btn-link ml-md-3 mt-2 mt-md-0">Learn more</a>
             </div>
         </div>
     </section>
+
 
     <!-- vectors -->
 
-    <section>
-        <div class="text-center">
-            <div class="d-block">
-                <div class="">
-                    <img src="./vector1.png" alt="">
-                </div>
-                <div class="">
-                    <img src="./Ellipse 1.png" alt="">
-                </div>
+<section>
+    <div class="text-center">
+        <div class="d-block position-relative mx-auto photo-wrapper">
+            <div>
+                <img src="./vector1.png" alt="vector" class="img-fluid main-image" />
             </div>
-            
-        </div>
-        
-    </section>
-
-    <section class="choose">
-        <div class="row mt-4 mt-70" >
-            <div class="col-md-4 col-lg-4 col-sm-4" >
-                <h4 style="font-size:40px; font-weight: bold;">One Stop.<br>Four <span class="text-primary" style="font-size:40px;">Possiblities</span>. </h4>
-            </div>
-            <div class="col-md-8 col-sm-8 col-lg-8">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h3 class="figures">3M</h3>
-                        <p>Active users</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="figures">60M</h3>
-                        <p>Links & QR <br>codes created</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="figures">1B</h3>
-                        <p>Clicked & Scanned connections</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="figures">300k</h3>
-                        <p>App Integrations</p>
-                    </div>
-                </div>
+            <div class="position-absolute ellipse-wrapper">
+                <img src="./Ellipse 1.png" alt="ellipse" class="img-fluid ellipse-image" />
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="choose2">
-        
+<section class="choose-section py-5">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
 
+            <div class="col-12 col-md-5 mb-4 mb-md-0 text-center text-md-start">
+                <h2 style="font-size: 2rem; font-weight: bold;" class="fw-bold display-5">
+                    One Stop.<br>
+                    Four <span style="font-size: 2rem; " class="text-primary">Possibilities</span>.
+                </h2>
+                <p style="color: black;" class=" mt-3">Discover our features that power millions of users and integrations
+                    worldwide.</p>
+            </div>
+
+            <div class="col-12 col-md-7">
+                <div class="row gy-5 gx-sm-4 gx-lg-4">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <div class="stat-card text-center p-3 shadow-sm rounded">
+                            <h3 class="fw-bold mb-1 text-primary">3M+</h3>
+                            <p style="color: black;"  class="mb-0 small ">Links & QR<br>Codes Created</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 mt-4">
+                        <div class="stat-card text-center p-3 shadow-sm rounded">
+                            <h3 class="fw-bold mb-1 text-primary">60M+</h3>
+                            <p style="color: black;"  class="mb-0 small ">Links & QR<br>Codes Created</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <div class="stat-card text-center p-3 shadow-sm rounded">
+                            <h3 class="fw-bold mb-1 text-primary">1B+</h3>
+                            <p style="color: black;"  class="mb-0 small ">Connections<br>Scanned</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 mt-4">
+                        <div class="stat-card text-center p-3 shadow-sm rounded">
+                            <h3 class="fw-bold mb-1 text-primary">300K+</h3>
+                            <p style="color: black;"  class="mb-0 small ">App<br>Integrations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!--Why choose us section-->
+<section class="choose2">
+    <div class="container">
         <div class="row mt-4">
-            <div class="col-md-4">
-                <h2 style="font-weight: bold;"     class="m-4">Why choose <span class="text-primary" style="font-size: 40px;">Scissors</span></h2>
-                <p class="m-4">Scissors is the hub of everything that has to do<br>
-                     with your link management. We shorten your URLs,<br>
-                     allow you creating custom ones for your personal,<br>
-                     business, event usage. Our swift QR code<br>
-                     creation, management and usage tracking with<br>
-                     advance analytics for all of these is second to<br>
-                     none. </p>
+
+            <!-- Left Column -->
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <h2 style="font-size: 2rem; font-weight: bold;" class="m-4 fw-bold">
+                    Why choose <span class="text-primary" style="font-size: 2rem; font-weight: bold;">Scissors</span>
+                </h2>
+                <p class="m-4">
+                    Scissors is the hub of everything that has to do<br>
+                    with your link management. We shorten your URLs,<br>
+                    allow you creating custom ones for your personal,<br>
+                    business, event usage. Our swift QR code<br>
+                    creation, management and usage tracking with<br>
+                    advance analytics for all of these is second to<br>
+                    none.
+                </p>
             </div>
-            <div class="col-md-4">
-                <img src="Group 6 (1).png">
-                <h3 class="head">URL Shortening</h3>
-                <p>Scissor allows you to shorten URLs of your<br>
-                   business, events. Shorten your URL at scale,<br>
-                   URL redirects.</p>
-    
-                <br>
-                 <img src="Group 6.png">
-                <h3 class="head">QR Codes</h3>
-                <p>Generate QR codes to your business, events.<br>
-                   Bring your audience and customers to your<br>
-                   doorstep with this scan and go solution.</p>
+
+            <!-- Middle Column -->
+            <div class="col-12 col-md-4 mb-4 mb-md-0 text-center text-md-start">
+                <img src="Group 6 (1).png" class="img-fluid" alt="URL Shortening">
+                <h3 style="font-size: 1.5rem;" class="head mt-3">URL Shortening</h3>
+                <p>
+                    Scissor allows you to shorten URLs of your<br>
+                    business, events. Shorten your URL at scale,<br>
+                    URL redirects.
+                </p>
+
+                <img src="Group 6.png" class="img-fluid mt-4" alt="QR Codes">
+                <h3 style="font-size: 1.5rem;" class="head mt-3">QR Codes</h3>
+                <p>
+                    Generate QR codes to your business, events.<br>
+                    Bring your audience and customers to your<br>
+                    doorstep with this scan and go solution.
+                </p>
             </div>
-            <div class="col-md-4">
-              <img src="custom.svg">
-                <h3 class="head">Custom URLs</h3>
-                <p>With Scissor, you can create custom URLs,<br>
-                   with the length you want! A solution for socials<br>
-                   and businesses.</p>
-    
-                <br>
-                <img src="data.png">
-    
-                <h3 class="head">Data Analytics</h3>
-                <p>Receive data on the usage of either your<br>
-                   shortened URL, custom URLs or generated QR<br>
-                   codes. Embedded to monitor progress.</p>
+
+            <!-- Right Column -->
+            <div class="col-12 col-md-4 text-center text-md-start">
+                <img src="custom.svg" class="img-fluid" alt="Custom URLs">
+                <h3 style="font-size: 1.5rem;" class="head mt-3">Custom URLs</h3>
+                <p>
+                    With Scissor, you can create custom URLs,<br>
+                    with the length you want! A solution for socials<br>
+                    and businesses.
+                </p>
+
+                <img src="data.png" class="img-fluid mt-4" alt="Data Analytics">
+                <h3 style="font-size: 1.5rem;" class="head mt-3">Data Analytics</h3>
+                <p>
+                    Receive data on the usage of either your<br>
+                    shortened URL, custom URLs or generated QR<br>
+                    codes. Embedded to monitor progress.
+                </p>
             </div>
+
         </div>
+    </div>
+</section>
 
-
-
-
-                
-    </section>
 
     <section class="text-center mt-5">
         <div class="perfect">
@@ -187,95 +246,107 @@
     </section>
     
 
-
+<!-- Price perfect Section -->
 <section>
-    <div class="row mt-4 m-5">
-        <div  id="b" class="col-md-4">
-            <br><br>
+    <div class="row mt-4 mx-3 pricing-row">
+        <div id="b" class="col-md-4 pricing-col">
             <div class="side-price-border p-5">
                 <h4 id="professionaltitle">Basic</h4>
                 <p id="charge">Free</p>
                 <h4>Free plan for all users</h4>
-                <p><img src="/check-circle (1).png"=""> Unlimited URL Shortening</p>
-                <p><img src="/check-circle (1).png"=""> Basic Link Analytics</p>
-                <p><img src="/check-circle (1).png"=""> Customizable Short Links</p>
-                <p><img src="/check-circle (1).png"=""> Standard Support</p>
-                <p><img src="/check-circle (1).png"=""> Ad-supported</p>
+                <p><img src="/check-circle (1).png" alt=""> Unlimited URL Shortening</p>
+                <p><img src="/check-circle (1).png" alt=""> Basic Link Analytics</p>
+                <p><img src="/check-circle (1).png" alt=""> Customizable Short Links</p>
+                <p><img src="/check-circle (1).png" alt=""> Standard Support</p>
+                <p><img src="/check-circle (1).png" alt=""> Ad-supported</p>
             </div>
         </div>
-        <div id="pr" class="col-md-4 professional">
+
+        <div id="pr" class="col-md-4 professional pricing-col">
             <div class="p-5">
                 <h3 id="professionaltitle">professional</h3>
                 <p id="charge">$15/month</p>
                 <h4>Ideal for business creators</h4>
-                <p><img src="/check-circle (1).png"=""> Enhanced Link Analytics</p>
-                <p><img src="/check-circle (1).png"=""> Custom Branded Domains</p>
-                <p><img src="/check-circle (1).png"=""> Advanced Link Customization</p>
-                <p><img src="/check-circle (1).png"=""> Priority Support</p>
-                <p><img src="/check-circle (1).png"=""> Ad-free Experience</p>
+                <p><img src="/check-circle (1).png" alt=""> Enhanced Link Analytics</p>
+                <p><img src="/check-circle (1).png" alt=""> Custom Branded Domains</p>
+                <p><img src="/check-circle (1).png" alt=""> Advanced Link Customization</p>
+                <p><img src="/check-circle (1).png" alt=""> Priority Support</p>
+                <p><img src="/check-circle (1).png" alt=""> Ad-free Experience</p>
             </div>
-            
-
         </div>
-        <div class="col-md-4 " >
-            <br><br>
+
+        <div class="col-md-4 pricing-col">
             <div class="side-price-border p-5">
                 <h3 id="professionaltitle">team</h3>
                 <p id="charge">$25/month</p>
                 <p>Share with up to 10 users</p>
-                <p><img src="/check-circle (1).png"=""> Team Collaboration</p>
-                <p><img src="/check-circle (1).png"=""> User Roles and Permissions</p>
-                <p><img src="/check-circle (1).png"=""> Enhanced Security</p>
-                <p><img src="/check-circle (1).png"="">API Access</p>
-                <p><img src="/check-circle (1).png"=""> Dedicated Account Manager</p>
+                <p><img src="/check-circle (1).png" alt=""> Team Collaboration</p>
+                <p><img src="/check-circle (1).png" alt=""> User Roles and Permissions</p>
+                <p><img src="/check-circle (1).png" alt=""> Enhanced Security</p>
+                <p><img src="/check-circle (1).png" alt="">API Access</p>
+                <p><img src="/check-circle (1).png" alt=""> Dedicated Account Manager</p>
             </div>
-           
         </div>
     </div>
 
-    <div class="text-center mt-5 mb-5 ">
-        <a href="" class="btn pricing-btn" style="width:200px;">Get Custom Pricing</a>
-        <a href="" class="btn btn-primary" style="width:200px;">Select Pricing</a>
-    </div>
-</section> 
-
-
-<section class="text-center">
-    <div class="add-background p-5">
-
-        <div class="card w-25 mx-auto">
-            <form action="">
-                <div class="m-4">
-                    <br>
-                    <input type="text" id="url" class="form-control" placeholder="Paste URL here...">
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <select name="select" class="form-control" id="">
-                                <option value="">Choose domain</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Type Alias here">
-                        </div>
-                    </div>
-                    
-                    <div class="">
-                        <button class="btn btn-primary w-100 mt-4">Trim URL <img src="/magic wand.png" alt=""></button>
-                    
-                        <p id="terms" class="text-primary mt-4 mb-4" >By clicking TrimURL, <a href="">i agree to the Terms of Service, Privacy Policy</a>and Use of Cookies.</p>
-                    </div>
-                </div>
-            </form>
-        
-        
+    <div class="button-container">
+        <a href="" class=" button btn pricing-btn">Get Custom Pricing</a>
+        <a href="" class=" button btn btn-primary">Select Pricing</a>
     </div>
 </section>
 
 
+
+<!--Form Section-->
+
+<section class="text-center mt-5">
+    <div class="add-background py-5 px-3">
+        <div class="container">
+            <div class="card mx-auto animate-fadein shadow">
+                <form action="">
+                    <div class="p-4">
+                        <input type="text" id="url" class="form-control input-hover mb-4"
+                            placeholder="Paste URL here..." required>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <select name="select" class="form-control input-hover" required>
+                                    <option value="">Choose domain</option>
+                                    <option value="scissor.com">scissor.com</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <input type="text" class="form-control input-hover" placeholder="Type Alias here">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 trim-btn-hover animate-bounce">
+                            Trim URL
+                            <img src="/magic wand.png" alt="Magic Wand" style="width: 20px; margin-left: 8px;">
+                        </button>
+
+                        <div class="terms-wrapper mt-4 px-2 text-center">
+                            <p id="terms" class="text-primary small mb-0">
+                                By clicking <strong>Trim URL</strong>,
+                                <a href="#" class="text-decoration-underline">I agree to the Terms of Service, Privacy
+                                    Policy</a>
+                                and Use of Cookies.
+                            </p>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <section>
     <div class="mt-5 text-center mx-auto">
-        <span id="faqs"></span>
-        <h3>FAQs</h3>
+       
+        <h3 style="color: #1e88e5; font-size: 2rem; font-weight: bold;">FAQs</h3>
     </div>
 
     <div class="w-75 mx-auto" >
@@ -284,7 +355,7 @@
                 <div class="col-md-11">
                     <p>How does URL shortening work?</p>
                 </div>
-                <div class="col-md-1 ">-</div>
+                <div class="col-md-1 ">+</div>
             </div>
             <div class="more-description">
                 URL shortening works by taking a long URL and creating a shorter, condensed version that redirects to the original URL. When a user clicks on the shortened link, they are redirected to the intended destination.
@@ -390,134 +461,139 @@
 </section>
 
 
+
+<!-- Revolutionizing Link Optimization Section -->
 <section>
     <div class="mt-5 add-background">
         <div class="text-center p-4">
             <br><br>
             <h3 class="revolution-text" >Revolutionizing Link Optimization</h3 >
-            <a href="" class="btn btn-primary mt-4">Get Started</a>
+            <a href="" class=" button btn btn-primary mt-4">Get Started</a>
         </div>
     </div>
 </section>
 
+
+<!-- Footer Section -->
 <section>
-    <footer class="mt-4">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="col-md-4 col-lg-4 col-sm-4">
-                    <div id="foot">
-                    <img src="Vector.png">
-                    <img src="Vector 2.png">
-                    <span style="font-size: 30px; font-weight: bold;">scissor</span>
+    <footer class="mt-1 bg-light py-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Logo and Socials -->
+                <div class="col-md-3 mb-4 mb-md-0 text-center text-md-left">
+                    <div id="foot"
+                        class="d-flex align-items-center justify-content-center justify-content-md-start mb-3 animate-fadein">
+                        <img style="margin-left: -90px;" src="Vector.png" alt="V1" class="mr-1" width="30">
+                        <img src="Vector 2.png" alt="V2" class="mr-2" width="3">
+                        <span style="font-size: 30px; font-weight: bold;">scissor</span>
                     </div>
-                    
-
-                
-
-                    
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 animate-slideup">
+                        <a href="#"><i class="fab fa-twitter fa-lg text-dark hover-fade"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-lg text-dark hover-fade"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-lg text-dark hover-fade"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp fa-lg text-dark hover-fade"></i></a>
+                    </div>
                 </div>
-        
-                <div class="col-md-4 col-lg-4 col-sm-4">
-                    <div class="mt-4 nav navbar ">
-                        <div class="socials ">
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-linkedin"></i>
-                        <i class="fa fa-facebook"></i>
+
+                <!-- Footer Links -->
+                <div class="col-md-9">
+                    <div class="row animate-slideup">
+                        <div class="col-6 col-md-3 mb-4">
+                            <h5 class="font-weight-bold">Why Scissor?</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Scissor 101</a></li>
+                                <li><a href="#">Integrations & API</a></li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <h5 class="font-weight-bold">Solutions</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Social Media</a></li>
+                                <li><a href="#">Digital Marketing</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">For Developers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <h5 class="font-weight-bold">Products</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Link Management</a></li>
+                                <li><a href="#">QR Codes</a></li>
+                                <li><a href="#">Link-in-bio</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <h5 class="font-weight-bold">Company</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">About Scissor</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Reviews</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row animate-slideup">
+                        <div class="col-6 col-md-3 mb-4">
+                            <h5 class="font-weight-bold">Resources</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Resource Library</a></li>
+                                <li><a href="#">Developers</a></li>
+                                <li><a href="#">App Connectors</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Trust Center</a></li>
+                                <li><a href="#">Browser Extension</a></li>
+                                <li><a href="#">Mobile App</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <h5 class="font-weight-bold">Features</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Branded Links</a></li>
+                                <li><a href="#">Mobile Links</a></li>
+                                <li><a href="#">Campaign Management</a></li>
+                                <li><a href="#">Analytics</a></li>
+                                <li><a href="#">QR Code Generation</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-3 mb-4">
+                            <h5 class="font-weight-bold">Features</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Branded Links</a></li>
+                                <li><a href="#">Mobile Links</a></li>
+                                <li><a href="#">Campaign Management</a></li>
+                                <li><a href="#">Analytics</a></li>
+                                <li><a href="#">QR Code Generation</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <h5 class="font-weight-bold">Legal</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Acceptable Use Policy</a></li>
+                                <li><a href="#">Code of Conduct</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-3">
-                        <p style="font-weight: bold;">Why Scissor ?</p>
-                        <span>
-                            Scissor 101<br>
-                            Integrations & API<br>
-                            Pricing<br>
-                        </span>
-                    </div>
-                    <div class="col-md-3">
-                        <p style="font-weight: bold;">Solutions</p>
-                        <span>
-                            Social Media<br>
-                            Digital Marketing<br>
-                            Customer Service<br>
-                            For Developers<br>
-                        </span>
-                    </div>
-                    <div class="col-md-3">
-                        <p style="font-weight: bold;">Products</p>
-                        <span>
-                            Link Management<br>
-                            QR Codes<br>
-                            Link-in-bio<br>
-                        </span>
-                    </div>
-                    <div class="col-md-3">
-                        <p style="font-weight: bold;">Company</p>
-                        <span>
-                            About Scissor <br>
-                            Careers<br>
-                            Partners<br>
-                            Press<br>
-                            Contact<br>
-                            Reviews<br>
-                        </span>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <p style="font-weight: bold;">Resources</p>
-                        <span>
-                            Blog <br>
-                            Resource Library <br>
-                            Developers <br>
-                            App Connectors <br>
-                            Support <br>
-                            Trust Center <br>
-                            Browser Extension <br>
-                            Mobile App <br>
-                        </span>
-                    </div>
-                    <div class="col-md-3">
-                        <p style="font-weight: bold;">Features</p>
-                        <span>
-                            Branded Links <br>
-                            Mobile Links <br>
-                            Campaign <br>
-                            Management & <br>
-                            Analytics <br>
-                            QR Code generation <br>
-                        </span>
-                    </div>
-                    <div class="col-md-3">
-                        <p style="font-weight: bold;">Legal</p>
-                        <span>
-                            Privacy Policy <br>
-                            Cookie Policy <br>
-                            Terms of Service <br>
-                            Acceptable Use Policy <br>
-                            Code of Conduct <br>
-                        </span>
-                    </div>
-                    <div class="col-md-3">
-                        
-                    </div>
-                </div>
-                
+            <!-- Bottom Note -->
+            <div class="text-center mt-4 animate-fadein">
+                <span class="text-muted">
+                    <a href="#">Terms of Service</a> | <a href="#">Security</a> | ⓒ Scissor 2025
+                </span>
             </div>
         </div>
-        
-        <div class="float-right ">
-            <span>Term of Service | Security | ⓒ Scissor 2023</span>
-        </div>
     </footer>
-    
 </section>
-
-
 </body>
 </html>
